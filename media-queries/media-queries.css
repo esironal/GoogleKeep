@@ -1,0 +1,50 @@
+
+@media (min-width: 600px) {
+  body{
+    grid-template-columns: 250px 1fr;
+
+  }
+
+  aside{
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+    
+  header{
+  display: flex;
+  flex-flow: row nowrap;
+  grid-column: 1/ 3 ;
+  grid-row:  1 /1 ;
+  }
+
+  .item-text{
+    display: flex;
+    font-size: 18px;
+  }
+
+  .item-search > .input-search{
+    display: block;
+    width: 100%;
+  }
+  
+  .item-profile{
+    display: flex;
+    margin: 20px;
+  }
+
+  .item-text > .google-text {
+    display: block;
+    margin-right: 6px;
+  }
+
+  .item-search{
+    display: flex;
+    width: 50%;
+  }
+  
+  main{
+    grid-column: 2 / 3;
+    grid-row: 2 / 2
+  }
+}
